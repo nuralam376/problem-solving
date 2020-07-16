@@ -30,3 +30,24 @@ function woodCalculator(chair, table, bed) {
 		return totalWood;
 	}
 }
+
+// Calculates the total brick required for the floors
+function brickCalculator(floor) {
+	// If the floor input is negative and not number, then return error message
+	if (floor < 0 || typeof floor != "number") {
+		return "Floor cannot be negative and must be a number";
+	}
+
+	var totalBricks = 0;
+
+	for (var i = 1; i <= floor; i++) {
+		if (i <= 10) {
+			totalBricks = totalBricks + 15 * 1000;
+		} else if (i > 10 && i <= 20) {
+			totalBricks = totalBricks + 12 * 1000;
+		} else {
+			totalBricks = totalBricks + 10 * 1000;
+		}
+	}
+	return totalBricks;
+}
