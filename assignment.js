@@ -51,3 +51,25 @@ function brickCalculator(floor) {
 	}
 	return totalBricks;
 }
+
+// Returns the smalllest friend's name
+function tinyFriend(friends) {
+	var smallestFriend = friends[0];
+
+	for (var i = 0; i < friends.length; i++) {
+		if (typeof friends[i] != "string") {
+			return "Friend name must be a string";
+		}
+
+		var element = friends[i];
+
+		if (element.length < smallestFriend.length) {
+			smallestFriend = element;
+		}
+	}
+
+	return smallestFriend;
+}
+
+var result = tinyFriend(["Abcd", "Deaaf", "Giasas", "1"]);
+console.log(result);
