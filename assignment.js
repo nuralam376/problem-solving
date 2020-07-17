@@ -54,6 +54,9 @@ function brickCalculator(floor) {
 
 // Returns the smalllest friend's name
 function tinyFriend(friends) {
+	if (friends.length == 0) {
+		return "Please give friends lists";
+	}
 	var smallestFriend = friends[0];
 
 	for (var i = 0; i < friends.length; i++) {
@@ -70,6 +73,3 @@ function tinyFriend(friends) {
 
 	return smallestFriend;
 }
-
-var result = tinyFriend(["Abcd", "Deaaf", "Giasas", "1"]);
-console.log(result);
