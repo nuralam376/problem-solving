@@ -5,6 +5,6 @@
 3. Calculates the total brick required for the floors
 4. Returns the smalllest friend's name
 
-Portfolio][portfolio]
+[Portfolio][portfolio]
 
 [portfolio]: https://nur-a-alam.me/
